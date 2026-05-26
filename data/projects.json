@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "vogue-editorial",
+    "title": "Vogue Editorial",
+    "year": 2023,
+    "representative_image": "images/projects/vogue-editorial/cover.jpg",
+    "page": "projects/vogue-editorial.html"
+  },
+  {
+    "slug": "los-angeles-nocturnes",
+    "title": "Los Angeles Nocturnes",
+    "year": 2022,
+    "representative_image": "images/projects/los-angeles-nocturnes/cover.jpg",
+    "page": "projects/los-angeles-nocturnes.html"
+  },
+  {
+    "slug": "salt-flats",
+    "title": "Salt Flats",
+    "year": 2021,
+    "representative_image": "images/projects/salt-flats/cover.jpg",
+    "page": "projects/salt-flats.html"
+  }
+]

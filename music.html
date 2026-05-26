@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Music — Patrick Gaffney</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Music credits — production, mixing, engineering — by Patrick Gaffney.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topnav">
+      <a href="index.html">Home</a><span class="sep">·</span><a href="music.html" aria-current="page">Music</a><span class="sep">·</span><a href="photography.html">Photography</a>
+    </nav>
+
+    <h1>Music</h1>
+
+    <div class="filter" id="filter" role="group" aria-label="Filter by role">
+      <button type="button" data-role="all" class="active">All</button><span class="sep">·</span><button type="button" data-role="engineering">Engineering</button><span class="sep">·</span><button type="button" data-role="production">Production</button><span class="sep">·</span><button type="button" data-role="mixing">Mixing</button>
+    </div>
+
+    <div class="songs" id="songs" aria-live="polite"></div>
+
+    <p id="empty" style="display:none; font-style: italic; color: #6b6450; margin-top: 1.5em;">Nothing here under that role &mdash; yet.</p>
+
+    <footer class="foot">
+      <p><em>Last updated 2026.</em></p>
+    </footer>
+  </div>
+
+  <script src="js/music-filter.js"></script>
+</body>
+</html>

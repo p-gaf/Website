@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Photography — Patrick Gaffney</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Photography — selected work and projects — by Patrick Gaffney.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topnav">
+      <a href="index.html">Home</a><span class="sep">·</span><a href="music.html">Music</a><span class="sep">·</span><a href="photography.html" aria-current="page">Photography</a>
+    </nav>
+
+    <h1>Photography</h1>
+
+    <h2>Selected Work</h2>
+    <div class="gallery" id="selected" data-gallery="selected" aria-label="Selected work"></div>
+
+    <h2>Projects</h2>
+    <ul class="projects-list" id="projects-list" aria-label="Projects"></ul>
+
+    <footer class="foot">
+      <p><em>All photographs &copy; Patrick Gaffney.</em></p>
+    </footer>
+  </div>
+
+  <script src="js/lightbox.js"></script>
+  <script>
+  (function () {
+    "use strict";
+    function escape(s) {
+      return String(s).replace(/[&<>"']/g, function (c) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+      });
+    }
+
+    var selectedEl = document.getElementById("selected");
+    var projectsEl = document.getElementById("projects-list");
+
+    fetch("data/selected.json")
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        selectedEl.innerHTML = data.map(function (p, i) {
+          return (
+            '<figure>' +
+              '<img class="lb" data-gallery="selected" data-index="' + i + '"' +
+              ' src="' + escape(p.src) + '" alt="' + escape(p.caption) + '" loading="lazy">' +
+              '<figcaption>' + escape(p.caption) + '</figcaption>' +
+            '</figure>'
+          );
+        }).join("");
+      })
+      .catch(function (e) {
+        selectedEl.innerHTML = '<p style="font-style:italic; color:#a01a1a;">Could not load selected.json (serve locally with <code>python3 -m http.server</code>).</p>';
+        console.error(e);
+      });
+
+    fetch("data/projects.json")
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        data.sort(function (a, b) { return (b.year || 0) - (a.year || 0); });
+        projectsEl.innerHTML = data.map(function (p) {
+          return (
+            '<li>' +
+              '<a class="thumb" href="' + escape(p.page) + '" aria-hidden="true" tabindex="-1"' +
+              ' style="background-image:url(\'' + escape(p.representative_image) + '\')"></a>' +
+              '<div>' +
+                '<a class="title" href="' + escape(p.page) + '">' + escape(p.title) + '</a>' +
+                ' <span class="year">&middot; ' + escape(String(p.year)) + '</span>' +
+              '</div>' +
+            '</li>'
+          );
+        }).join("");
+      })
+      .catch(function (e) {
+        projectsEl.innerHTML = '<li><p style="font-style:italic; color:#a01a1a;">Could not load projects.json.</p></li>';
+        console.error(e);
+      });
+  })();
+  </script>
+</body>
+</html>
