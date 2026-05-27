@@ -31,8 +31,8 @@
 
     songsEl.innerHTML = list.map(function (s) {
       var streams = [];
-      if (s.spotify) streams.push('<a href="' + escape(s.spotify) + '" rel="noopener">Spotify</a>');
-      if (s.apple_music) streams.push('<a href="' + escape(s.apple_music) + '" rel="noopener">Apple Music</a>');
+      if (s.spotify) streams.push('<a href="' + escape(s.spotify) + '" target="_blank" rel="noopener noreferrer">Spotify</a>');
+      if (s.apple_music) streams.push('<a href="' + escape(s.apple_music) + '" target="_blank" rel="noopener noreferrer">Apple Music</a>');
       var streamsHtml = streams.join('<span class="sep">·</span>');
 
       return (

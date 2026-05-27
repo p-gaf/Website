@@ -11,7 +11,7 @@ so use a tiny local server:
 python3 -m http.server 8000
 ```
 
-Then open <http://localhost:8000>.
+http://localhost:8000
 
 ## Adding a song
 
@@ -30,8 +30,8 @@ Edit `data/songs.json` and append a new object. Drop the cover image into
 }
 ```
 
-`roles` can include any of: `production`, `mixing`, `engineering`. Any role
-that doesn't match one of the three filter buttons just shows up in the tag
+`roles` can include any of: `production`, `mixing`, `engineering`, `mastering`.
+Any role that doesn't match one of the filter buttons just shows up in the tag
 line but isn't filterable — add a new filter button in `music.html` if you
 want one.
 

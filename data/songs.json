@@ -1,47 +1,210 @@
 [
   {
-    "title": "Long Way Around",
-    "artist": "June Halloway",
-    "roles": ["production", "mixing"],
+    "title": "Nobody Dances Anymore",
+    "artist": "Sunrose",
+    "roles": [
+      "engineering"
+    ],
+    "year": 2025,
+    "cover": "images/covers/nobody-dances-anymore.jpg",
+    "spotify": "https://open.spotify.com/track/0pv4JroUs3sBmaeQ0YeAqL",
+    "apple_music": "https://music.apple.com/us/album/nobody-dances-anymore/1848203437?i=1848203438"
+  },
+  {
+    "title": "Demon Dressed in White",
+    "artist": "Riley Russell",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
+    "year": 2025,
+    "cover": "images/covers/demon-dressed-in-white.jpg",
+    "spotify": "https://open.spotify.com/track/7BLJj2mq5hHNtEBITGL9vO",
+    "apple_music": "https://music.apple.com/us/album/demon-dressed-in-white/1842823472?i=1842823473"
+  },
+  {
+    "title": "Please",
+    "artist": "Riley Russell",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
+    "year": 2025,
+    "cover": "images/covers/please.jpg",
+    "spotify": "https://open.spotify.com/track/0gRGhnQ6xik0hQwAzMCbqF",
+    "apple_music": "https://music.apple.com/us/album/please/1819844043?i=1819844044"
+  },
+  {
+    "title": "Forget Me",
+    "artist": "Riley Russell",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
+    "year": 2025,
+    "cover": "images/covers/forget-me.jpg",
+    "spotify": "https://open.spotify.com/track/3JGDPT4YA0LxfSnkxj672K",
+    "apple_music": "https://music.apple.com/us/album/forget-me/1816351353?i=1816351354"
+  },
+  {
+    "title": "Foreseeable",
+    "artist": "Sasha Fox",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
+    "year": 2025,
+    "cover": "images/covers/foreseeable.jpg",
+    "spotify": "https://open.spotify.com/track/35vnMU5wW5aIgpXQCBjRgR",
+    "apple_music": "https://music.apple.com/us/album/foreseeable/1824633154?i=1824633218"
+  },
+  {
+    "title": "Forever",
+    "artist": "Sasha Fox",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
+    "year": 2025,
+    "cover": "images/covers/forever.jpg",
+    "spotify": "https://open.spotify.com/track/4xQNHOqI45ayGYZZcOaCVp",
+    "apple_music": "https://music.apple.com/us/album/forever/1824633154?i=1824633220"
+  },
+  {
+    "title": "Varnish",
+    "artist": "Sasha Fox",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
+    "year": 2025,
+    "cover": "images/covers/varnish.jpg",
+    "spotify": "https://open.spotify.com/track/1WLtBe0iXgDOmYYb01KZ6S",
+    "apple_music": "https://music.apple.com/us/album/varnish/1824633154?i=1824633183"
+  },
+  {
+    "title": "Counterfeit",
+    "artist": "Sasha Fox",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
+    "year": 2025,
+    "cover": "images/covers/counterfeit.jpg",
+    "spotify": "https://open.spotify.com/track/1PR1g93pRCEwDFEXst3pEy",
+    "apple_music": "https://music.apple.com/us/album/counterfeit/1824633154?i=1824633216"
+  },
+  {
+    "title": "Pageantry",
+    "artist": "Sasha Fox",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
+    "year": 2025,
+    "cover": "images/covers/forever.jpg",
+    "spotify": "https://open.spotify.com/track/5j48pmDGSuGvjxIuYAxNAk",
+    "apple_music": "https://music.apple.com/us/album/pageantry/1795657576?i=1795657578"
+  },
+  {
+    "title": "Stingray",
+    "artist": "Sasha Fox",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
     "year": 2024,
-    "cover": "images/covers/long-way-around.jpg",
-    "spotify": "https://open.spotify.com/track/placeholder",
-    "apple_music": "https://music.apple.com/placeholder"
+    "cover": "images/covers/forever.jpg",
+    "spotify": "https://open.spotify.com/track/0Md9VdNTJusZLAYYyo6Thk",
+    "apple_music": "https://music.apple.com/us/album/stingray/1757182607?i=1757182909"
   },
   {
-    "title": "Static in the Garden",
-    "artist": "Holm",
-    "roles": ["engineering", "mixing"],
+    "title": "Tangled",
+    "artist": "Sasha Fox",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
     "year": 2024,
-    "cover": "images/covers/static-in-the-garden.jpg",
-    "spotify": "https://open.spotify.com/track/placeholder",
-    "apple_music": "https://music.apple.com/placeholder"
+    "cover": "images/covers/forever.jpg",
+    "spotify": "https://open.spotify.com/track/3GgFVvH55Y1Gr8OsALKV0F",
+    "apple_music": "https://music.apple.com/us/album/tangled/1749768561?i=1749768562"
   },
   {
-    "title": "Hours and Hours",
-    "artist": "Marlow Dean",
-    "roles": ["production"],
+    "title": "Haircut",
+    "artist": "Sasha Fox",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering",
+      "mastering"
+    ],
+    "year": 2024,
+    "cover": "images/covers/haircut.jpg",
+    "spotify": "https://open.spotify.com/track/6jGBuHsH7hjr7pVmQBe079",
+    "apple_music": "https://music.apple.com/us/album/haircut/1782071913?i=1782071914"
+  },
+  {
+    "title": "Vertigo",
+    "artist": "Sasha Fox",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering",
+      "mastering"
+    ],
+    "year": 2024,
+    "cover": "images/covers/vertigo.jpg",
+    "spotify": "https://open.spotify.com/track/3PZmzVHttnpUBORQfScRw7",
+    "apple_music": "https://music.apple.com/us/album/vertigo/1733946555?i=1733946556"
+  },
+  {
+    "title": "Tender Tally",
+    "artist": "Sasha Fox",
+    "roles": [
+      "mixing",
+      "mastering"
+    ],
+    "year": 2024,
+    "cover": "images/covers/tender-tally.jpg",
+    "spotify": "https://open.spotify.com/track/1Z51imALFO33g6AAOEZ2FU",
+    "apple_music": "https://music.apple.com/us/album/tender-tally/1728004463?i=1728004464"
+  },
+  {
+    "title": "Bug Bite",
+    "artist": "Sasha Fox",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
     "year": 2023,
-    "cover": "images/covers/hours-and-hours.jpg",
-    "spotify": "https://open.spotify.com/track/placeholder",
-    "apple_music": "https://music.apple.com/placeholder"
+    "cover": "images/covers/bug-bite.jpg",
+    "spotify": "https://open.spotify.com/track/2wC1cs4EibCxkTeNweItJS",
+    "apple_music": "https://music.apple.com/us/album/bug-bite/1714092481?i=1714092482"
   },
   {
-    "title": "Cold Coast",
-    "artist": "The Idle Year",
-    "roles": ["engineering"],
+    "title": "Antics",
+    "artist": "Sasha Fox",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering",
+      "mastering"
+    ],
     "year": 2023,
-    "cover": "images/covers/cold-coast.jpg",
-    "spotify": "https://open.spotify.com/track/placeholder",
-    "apple_music": "https://music.apple.com/placeholder"
-  },
-  {
-    "title": "Western Window",
-    "artist": "Saoirse Lane",
-    "roles": ["production", "mixing", "engineering"],
-    "year": 2022,
-    "cover": "images/covers/western-window.jpg",
-    "spotify": "https://open.spotify.com/track/placeholder",
-    "apple_music": "https://music.apple.com/placeholder"
+    "cover": "images/covers/antics.jpg",
+    "spotify": "https://open.spotify.com/track/4EpY3kA2pPoQNkiMU1WpBW",
+    "apple_music": "https://music.apple.com/us/album/antics/1709690655?i=1709690986"
   }
 ]
