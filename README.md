@@ -80,9 +80,17 @@ Any `<img class="lb">` opens in the lightbox on click.
 
 ## Deploying
 
-Push to a Netlify-connected branch and Netlify will pick it up; `netlify.toml`
-points it at the repo root. The domain `patrickgaffney.studio` gets wired in
-the Netlify dashboard after the first successful deploy.
+The site is served via GitHub Pages from the `main` branch of the repo.
+
+- Push to `main` → GitHub Pages auto-publishes within ~30 seconds.
+- The `CNAME` file at the repo root tells Pages to serve the site at
+  `patrickgaffney.studio`.
+- The `.nojekyll` file disables Jekyll preprocessing so files are served
+  verbatim (no surprises with underscore-prefixed files, etc.).
+
+If `_template.html` shouldn't be publicly accessible at
+`/projects/_template.html`, move it out of `projects/` or .gitignore it
+locally — it's only referenced by humans, not by the site itself.
 
 ## File map
 
@@ -106,6 +114,7 @@ the Netlify dashboard after the first successful deploy.
 ├── js/
 │   ├── music-filter.js
 │   └── lightbox.js
-├── netlify.toml
+├── CNAME                   ← custom-domain hint for GitHub Pages
+├── .nojekyll               ← disables Jekyll on GitHub Pages
 └── README.md
 ```
