@@ -5,13 +5,19 @@ Hand-coded portfolio site. Static HTML, CSS, vanilla JS. No build step.
 ## Running locally
 
 `fetch()` won't work when opening the HTML files directly from the filesystem,
-so use a tiny local server:
+so use the included local server (it mirrors GitHub Pages' implicit `.html`
+fallback so internal links work the same as in production):
 
 ```
-python3 -m http.server 8000
+python3 scripts/serve.py
 ```
 
-http://localhost:8000
+Then open <http://localhost:8000>. Pass a port number to use something other
+than 8000 (`python3 scripts/serve.py 9000`).
+
+You can still use the stock `python3 -m http.server 8000` if you only need to
+preview pages by their full `.html` paths, but the clean URLs (`/music`,
+`/projects/altadena-girls-for-vogue`) require the included server.
 
 ## Adding a song
 

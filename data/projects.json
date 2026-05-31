@@ -4,7 +4,7 @@
     "title": "Altadena Girls for Vogue",
     "year": 2025,
     "category": "fashion-editorial",
-    "page": "projects/altadena-girls-for-vogue.html",
+    "page": "/projects/altadena-girls-for-vogue",
     "display_order": 1
   },
   {
@@ -12,7 +12,7 @@
     "title": "Riley and Nox",
     "year": 2026,
     "category": "fashion-editorial",
-    "page": "projects/riley-and-nox-2026.html",
+    "page": "/projects/riley-and-nox-2026",
     "display_order": 2
   },
   {
@@ -20,7 +20,7 @@
     "title": "Riley Russell for Etro",
     "year": 2025,
     "category": "fashion-editorial",
-    "page": "projects/riley-russell-for-etro-2025.html",
+    "page": "/projects/riley-russell-for-etro-2025",
     "display_order": 3
   },
   {
@@ -28,7 +28,7 @@
     "title": "Riley Russell for SMFK",
     "year": 2025,
     "category": "fashion-editorial",
-    "page": "projects/riley-russell-for-smfk-2025.html",
+    "page": "/projects/riley-russell-for-smfk-2025",
     "display_order": 4
   },
   {
@@ -36,7 +36,7 @@
     "title": "Stevan Journal and Riley Test Shoot",
     "year": 2025,
     "category": "fashion-editorial",
-    "page": "projects/stevan-journal-and-riley-test-shoot-2025.html",
+    "page": "/projects/stevan-journal-and-riley-test-shoot-2025",
     "display_order": 5
   },
   {
@@ -44,7 +44,7 @@
     "title": "Nuvonu Julep Dress",
     "year": 2024,
     "category": "fashion-editorial",
-    "page": "projects/nuvonu-julep-dress-2024.html",
+    "page": "/projects/nuvonu-julep-dress-2024",
     "display_order": 6
   },
   {
@@ -52,7 +52,7 @@
     "title": "Jane Dillon",
     "year": 2026,
     "category": "music",
-    "page": "projects/jane-dillon.html",
+    "page": "/projects/jane-dillon",
     "display_order": 1
   },
   {
@@ -60,7 +60,7 @@
     "title": "Riley Russell Demon Dressed in White Music Video BTS",
     "year": 2025,
     "category": "music",
-    "page": "projects/riley-russell-demon-dressed-in-white-bts.html",
+    "page": "/projects/riley-russell-demon-dressed-in-white-bts",
     "display_order": 2
   },
   {
@@ -68,14 +68,14 @@
     "title": "Riley Forget Me Music Video BTS",
     "year": 2025,
     "category": "music",
-    "page": "projects/riley-forget-me-bts.html",
+    "page": "/projects/riley-forget-me-bts",
     "display_order": 3
   },
   {
     "slug": "concert-photos",
     "title": "Concert Photos",
     "category": "music",
-    "page": "projects/concert-photos.html",
+    "page": "/projects/concert-photos",
     "display_order": 4
   },
   {
@@ -83,20 +83,20 @@
     "title": "Ireland",
     "year": 2025,
     "category": "documentary",
-    "page": "projects/ireland-2025.html"
+    "page": "/projects/ireland-2025"
   },
   {
     "slug": "hollywood-beauty-awards-2025",
     "title": "Hollywood Beauty Awards",
     "year": 2025,
     "category": "events",
-    "page": "projects/hollywood-beauty-awards-2025.html"
+    "page": "/projects/hollywood-beauty-awards-2025"
   },
   {
     "slug": "nye-2026",
     "title": "NYE",
     "year": 2026,
     "category": "events",
-    "page": "projects/nye-2026.html"
+    "page": "/projects/nye-2026"
   }
 ]
