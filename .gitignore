@@ -8,3 +8,7 @@
 
 # Node, just in case anything sneaks in later
 node_modules/
+
+# Raw, pre-optimization image drops — optimized copies live elsewhere under images/
+images/raw/*
+!images/raw/.gitkeep

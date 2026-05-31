@@ -1,23 +1,102 @@
 [
   {
-    "slug": "vogue-editorial",
-    "title": "Vogue Editorial",
-    "year": 2023,
-    "representative_image": "images/projects/vogue-editorial/cover.jpg",
-    "page": "projects/vogue-editorial.html"
+    "slug": "altadena-girls-for-vogue",
+    "title": "Altadena Girls for Vogue",
+    "year": 2025,
+    "category": "fashion-editorial",
+    "page": "projects/altadena-girls-for-vogue.html",
+    "display_order": 1
   },
   {
-    "slug": "los-angeles-nocturnes",
-    "title": "Los Angeles Nocturnes",
-    "year": 2022,
-    "representative_image": "images/projects/los-angeles-nocturnes/cover.jpg",
-    "page": "projects/los-angeles-nocturnes.html"
+    "slug": "riley-and-nox-2026",
+    "title": "Riley and Nox",
+    "year": 2026,
+    "category": "fashion-editorial",
+    "page": "projects/riley-and-nox-2026.html",
+    "display_order": 2
   },
   {
-    "slug": "salt-flats",
-    "title": "Salt Flats",
-    "year": 2021,
-    "representative_image": "images/projects/salt-flats/cover.jpg",
-    "page": "projects/salt-flats.html"
+    "slug": "riley-russell-for-etro-2025",
+    "title": "Riley Russell for Etro",
+    "year": 2025,
+    "category": "fashion-editorial",
+    "page": "projects/riley-russell-for-etro-2025.html",
+    "display_order": 3
+  },
+  {
+    "slug": "riley-russell-for-smfk-2025",
+    "title": "Riley Russell for SMFK",
+    "year": 2025,
+    "category": "fashion-editorial",
+    "page": "projects/riley-russell-for-smfk-2025.html",
+    "display_order": 4
+  },
+  {
+    "slug": "stevan-journal-and-riley-test-shoot-2025",
+    "title": "Stevan Journal and Riley Test Shoot",
+    "year": 2025,
+    "category": "fashion-editorial",
+    "page": "projects/stevan-journal-and-riley-test-shoot-2025.html",
+    "display_order": 5
+  },
+  {
+    "slug": "nuvonu-julep-dress-2024",
+    "title": "Nuvonu Julep Dress",
+    "year": 2024,
+    "category": "fashion-editorial",
+    "page": "projects/nuvonu-julep-dress-2024.html",
+    "display_order": 6
+  },
+  {
+    "slug": "jane-dillon",
+    "title": "Jane Dillon",
+    "year": 2026,
+    "category": "music",
+    "page": "projects/jane-dillon.html",
+    "display_order": 1
+  },
+  {
+    "slug": "riley-russell-demon-dressed-in-white-bts",
+    "title": "Riley Russell Demon Dressed in White Music Video BTS",
+    "year": 2025,
+    "category": "music",
+    "page": "projects/riley-russell-demon-dressed-in-white-bts.html",
+    "display_order": 2
+  },
+  {
+    "slug": "riley-forget-me-bts",
+    "title": "Riley Forget Me Music Video BTS",
+    "year": 2025,
+    "category": "music",
+    "page": "projects/riley-forget-me-bts.html",
+    "display_order": 3
+  },
+  {
+    "slug": "concert-photos",
+    "title": "Concert Photos",
+    "category": "music",
+    "page": "projects/concert-photos.html",
+    "display_order": 4
+  },
+  {
+    "slug": "ireland-2025",
+    "title": "Ireland",
+    "year": 2025,
+    "category": "documentary",
+    "page": "projects/ireland-2025.html"
+  },
+  {
+    "slug": "hollywood-beauty-awards-2025",
+    "title": "Hollywood Beauty Awards",
+    "year": 2025,
+    "category": "events",
+    "page": "projects/hollywood-beauty-awards-2025.html"
+  },
+  {
+    "slug": "nye-2026",
+    "title": "NYE",
+    "year": 2026,
+    "category": "events",
+    "page": "projects/nye-2026.html"
   }
 ]

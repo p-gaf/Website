@@ -39,23 +39,59 @@ The music list sorts newest first by `year`, automatically.
 
 ## Adding a photography project
 
-1. Make a folder: `images/projects/<slug>/` and drop photos in there.
-   Convention: `cover.jpg` plus `01.jpg`, `02.jpg`, etc.
-2. Copy `projects/_template.html` to `projects/<slug>.html`. Fill in the
+1. Optimize each image through `scripts/optimize_image.py` first
+   (see "Image optimization" below).
+2. Make a folder: `images/projects/<slug>/` and drop the optimized
+   photos in there. Convention: `cover.jpg` plus `01.jpg`, `02.jpg`, etc.
+3. Copy `projects/_template.html` to `projects/<slug>.html`. Fill in the
    title, year, paragraph, and `<img>` tags. Each image must have
    `class="lb"` so it opens in the lightbox.
-3. Append an entry to `data/projects.json`:
+4. Append an entry to `data/projects.json`:
    ```json
    {
      "slug": "<slug>",
      "title": "Project Title",
      "year": 2024,
+     "category": "fashion-editorial",
      "representative_image": "images/projects/<slug>/cover.jpg",
      "page": "projects/<slug>.html"
    }
    ```
 
-The Projects list on `photography.html` sorts newest first by `year`.
+`category` must be one of: `fashion-editorial`, `music`, `documentary`,
+`events`. Projects are grouped by category on `photography.html` and
+sorted newest-first within each group. Empty categories are hidden.
+
+## Image optimization
+
+Every photo gets run through the optimizer before placing under
+`images/`. Defaults: max long edge 2400px, JPEG quality 82, EXIF stripped.
+
+```bash
+# single image
+python3 scripts/optimize_image.py raw-shot.heic -o images/selected/mojave.jpg
+
+# a whole folder (drops optimized .jpg copies into the destination dir)
+python3 scripts/optimize_image.py images/raw/ireland-2022/ -o images/projects/ireland-2022/
+
+# custom dimension / quality
+python3 scripts/optimize_image.py raw.tiff --max-dim 2000 --quality 80
+```
+
+Use semantic filenames (`mojave-sunrise.jpg`, not `IMG_4831.jpg`). Within
+project folders, sequential names (`01.jpg`, `02.jpg`) are fine because
+the order is fixed.
+
+The `images/raw/` folder is gitignored — drop unoptimized originals there
+without worrying about them ending up on GitHub. Two conventional
+sub-locations:
+
+- `images/raw/selects/` — drop new files here when you want to add to
+  Selected Work. Tell Claude to "process the selects."
+- `images/raw/<category>/<project-name>/` — full project folder. Tell
+  Claude to "process the [project name] folder." Claude derives slug,
+  title, year (from EXIF), category (from parent folder), and image
+  order from filename sort.
 
 ## Adding a Selected Work photo
 
@@ -114,6 +150,8 @@ locally — it's only referenced by humans, not by the site itself.
 ├── js/
 │   ├── music-filter.js
 │   └── lightbox.js
+├── scripts/
+│   └── optimize_image.py   ← image optimizer (see "Image optimization")
 ├── CNAME                   ← custom-domain hint for GitHub Pages
 ├── .nojekyll               ← disables Jekyll on GitHub Pages
 └── README.md

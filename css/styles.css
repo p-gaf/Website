@@ -18,6 +18,23 @@ body {
   padding: 40px 20px 80px;
 }
 
+/* Wider container used by the Selected Work gallery on the Photography page,
+   so images extend past the 720px text column on desktop. */
+.wrap-wide {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+  box-sizing: border-box;
+}
+/* When .wrap-wide is sandwiched between two .wrap divs, tighten the vertical
+   gap so the gallery flows naturally instead of having double padding. */
+.wrap + .wrap-wide { padding-top: 0; }
+.wrap-wide + .wrap { padding-top: 20px; }
+/* And tighten the top .wrap's bottom padding so the gallery sits closer to
+   the page heading. */
+.wrap:has(+ .wrap-wide) { padding-bottom: 0; }
+.wrap-wide .gallery { margin-top: 1.5em; }
+
 /* Headings */
 h1, h2, h3 {
   font-family: inherit;
@@ -35,7 +52,7 @@ a, a:visited {
   color: #1f3a93;
   text-decoration: underline;
 }
-a:hover, a:focus { color: #a01a1a; }
+a:hover, a:focus { color: #666666; }
 
 /* Top navigation — non-home pages */
 .topnav {
@@ -116,7 +133,7 @@ hr {
   text-decoration: underline;
   cursor: pointer;
 }
-.filter button:hover { color: #a01a1a; }
+.filter button:hover { color: #666666; }
 .filter button.active {
   color: #111;
   text-decoration: none;
@@ -159,14 +176,20 @@ hr {
 .song .streams a { display: inline-block; }
 .song .streams .sep { color: #999999; margin: 0 4px; }
 
-/* Photography page */
+/* Photography page — masonry-style gallery using CSS columns so images
+   preserve their aspect ratios and pack irregularly. */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 14px 14px;
+  column-count: 3;
+  column-gap: 14px;
   margin: 1em 0 0;
 }
-.gallery figure { margin: 0; }
+.gallery figure {
+  display: block;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  margin: 0 0 14px 0;
+}
 .gallery img {
   width: 100%;
   height: auto;
@@ -181,27 +204,18 @@ hr {
   margin-top: 6px;
 }
 
+.clients {
+  font-style: italic;
+  color: #666666;
+}
+
 .projects-list {
   margin: 1em 0 0;
   list-style: none;
   padding: 0;
 }
 .projects-list li {
-  display: grid;
-  grid-template-columns: 90px 1fr;
-  grid-column-gap: 14px;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px dotted #dddddd;
-}
-.projects-list li:last-child { border-bottom: none; }
-.projects-list .thumb {
-  width: 90px;
-  height: 70px;
-  background: #eeeeee;
-  background-size: cover;
-  background-position: center;
-  display: block;
+  padding: 6px 0;
 }
 .projects-list .title { font-style: italic; }
 .projects-list .year { color: #666666; font-size: 13px; }
@@ -252,7 +266,8 @@ hr {
 @media (max-width: 600px) {
   .wrap { padding: 28px 20px 60px; }
   .home { padding-top: 50px; }
-  .gallery { grid-template-columns: repeat(2, 1fr); grid-gap: 10px; }
+  .gallery { column-count: 2; column-gap: 10px; }
+  .gallery figure { margin-bottom: 10px; }
   .song {
     grid-template-columns: 48px 1fr;
     grid-row-gap: 6px;
@@ -263,8 +278,4 @@ hr {
     text-align: left;
     padding-left: 62px;
   }
-  .projects-list li {
-    grid-template-columns: 72px 1fr;
-  }
-  .projects-list .thumb { width: 72px; height: 56px; }
 }

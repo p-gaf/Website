@@ -1,8 +1,66 @@
 [
-  { "src": "images/selected/01.jpg", "caption": "Untitled, 2024" },
-  { "src": "images/selected/02.jpg", "caption": "Mojave, 2024" },
-  { "src": "images/selected/03.jpg", "caption": "Echo Park, 2023" },
-  { "src": "images/selected/04.jpg", "caption": "Studio, 2023" },
-  { "src": "images/selected/05.jpg", "caption": "After the rain, 2023" },
-  { "src": "images/selected/06.jpg", "caption": "Untitled, 2022" }
+  {
+    "src": "images/selected/riley-and-nox-2026-01.jpg",
+    "caption": "Riley and Nox, 2026"
+  },
+  {
+    "src": "images/selected/riley-russell-for-etro-2025-04.jpg",
+    "caption": "Riley Russell for Etro, 2025"
+  },
+  {
+    "src": "images/selected/nuvonu-julep-dress-2024-09.jpg",
+    "caption": "Nuvonu Julep Dress, 2024"
+  },
+  {
+    "src": "images/selected/nuvonu-julep-dress-2024-02.jpg",
+    "caption": "Nuvonu Julep Dress, 2024"
+  },
+  {
+    "src": "images/selected/jane-dillon-05.jpg",
+    "caption": "Jane Dillon, 2026"
+  },
+  {
+    "src": "images/selected/riley-and-nox-2026-10.jpg",
+    "caption": "Riley and Nox, 2026"
+  },
+  {
+    "src": "images/selected/riley-and-nox-2026-09.jpg",
+    "caption": "Riley and Nox, 2026"
+  },
+  {
+    "src": "images/selected/riley-russell-for-etro-2025-03.jpg",
+    "caption": "Riley Russell for Etro, 2025"
+  },
+  {
+    "src": "images/selected/riley-russell-for-smfk-2025-02.jpg",
+    "caption": "Riley Russell for SMFK, 2025"
+  },
+  {
+    "src": "images/selected/riley-forget-me-bts-06.jpg",
+    "caption": "Riley Forget Me Music Video BTS, 2025"
+  },
+  {
+    "src": "images/selected/nye-2026-02.jpg",
+    "caption": "NYE, 2026"
+  },
+  {
+    "src": "images/selected/hollywood-beauty-awards-2025-01.jpg",
+    "caption": "Hollywood Beauty Awards, 2025"
+  },
+  {
+    "src": "images/selected/altadena-girls-for-vogue-07.jpg",
+    "caption": "Altadena Girls for Vogue, 2025"
+  },
+  {
+    "src": "images/selected/altadena-girls-for-vogue-08.jpg",
+    "caption": "Altadena Girls for Vogue, 2025"
+  },
+  {
+    "src": "images/selected/ireland-2025-06.jpg",
+    "caption": "Ireland, 2025"
+  },
+  {
+    "src": "images/selected/riley-and-nox-2026-04.jpg",
+    "caption": "Riley and Nox, 2026"
+  }
 ]
