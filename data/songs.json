@@ -1,5 +1,19 @@
 [
   {
+    "title": "Sorry",
+    "artist": "Jane Dillon",
+    "roles": [
+      "engineering"
+    ],
+    "note": "album cover",
+    "note_link": "/projects/jane-dillon",
+    "note_title": "See the Jane Dillon photographs",
+    "year": 2026,
+    "cover": "images/covers/sorry.jpg",
+    "spotify": "https://open.spotify.com/track/39Tyc6PFl5IVqLW5FgmjyA",
+    "apple_music": "https://music.apple.com/us/album/sorry/6793874991?i=6793874995"
+  },
+  {
     "title": "Nobody Dances Anymore",
     "artist": "Sunrose",
     "roles": [

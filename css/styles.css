@@ -164,6 +164,8 @@ hr {
   font-size: 13px;
   color: #666666;
 }
+/* Non-filterable aside on a credit row, e.g. "(album cover)" */
+.song .tags .note { font-style: italic; }
 .song .year {
   color: #666666;
   font-size: 13px;

@@ -16,6 +16,19 @@
     return roles.map(function (r) { return r.charAt(0).toUpperCase() + r.slice(1); }).join(", ");
   }
 
+  // Optional non-filterable aside, e.g. "(album cover)". When note_link is set
+  // the text becomes a link to the related page, with a hover tooltip.
+  function noteHtml(s) {
+    if (!s.note) return "";
+    var inner = escape(s.note);
+    if (s.note_link) {
+      inner = '<a href="' + escape(s.note_link) + '"' +
+              (s.note_title ? ' title="' + escape(s.note_title) + '"' : '') +
+              '>' + inner + '</a>';
+    }
+    return ' <span class="note">(' + inner + ')</span>';
+  }
+
   function render() {
     var role = state.role;
     var list = role === "all"
@@ -41,7 +54,7 @@
           '<div class="meta">' +
             '<span class="title">' + escape(s.title) + '</span> &mdash; ' +
             '<span class="artist">' + escape(s.artist) + '</span><br>' +
-            '<span class="tags">' + escape(rolesLabel(s.roles)) + '</span>' +
+            '<span class="tags">' + escape(rolesLabel(s.roles)) + noteHtml(s) + '</span>' +
             '<span class="year"> &middot; ' + escape(String(s.year)) + '</span>' +
           '</div>' +
           '<div class="streams">' + streamsHtml + '</div>' +

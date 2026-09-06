@@ -41,6 +41,21 @@ Any role that doesn't match one of the filter buttons just shows up in the tag
 line but isn't filterable — add a new filter button in `music.html` if you
 want one.
 
+Optional `"note"` field for a credit that isn't a filterable role — renders in
+italic parentheses after the roles, e.g. `"note": "album cover"` displays as
+*Engineering (album cover)*. Add `"note_link"` to make the note text a link
+(e.g. to the photography project the cover came from), and `"note_title"` for
+the hover tooltip:
+
+```json
+"note": "album cover",
+"note_link": "/projects/jane-dillon",
+"note_title": "See the Jane Dillon photographs"
+```
+
+Also omit either streaming link if the track isn't on that platform; the row
+just shows the one that exists.
+
 The music list sorts newest first by `year`, automatically.
 
 ## Adding a photography project
