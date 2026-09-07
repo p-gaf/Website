@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Discography — Patrick Gaffney</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discography — production, mixing, engineering, mastering and scoring credits by Patrick Gaffney.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topnav">
+      <a href="/">Home</a><span class="sep">·</span><a href="/discography" aria-current="page">Discography</a><span class="sep">·</span><a href="/photography">Photography</a>
+    </nav>
+
+    <h1>Discography</h1>
+
+    <div class="filter" id="filter" role="group" aria-label="Filter by role">
+      <button type="button" data-role="all" class="active">All</button><span class="sep">·</span><button type="button" data-role="production">Production</button><span class="sep">·</span><button type="button" data-role="mixing">Mixing</button><span class="sep">·</span><button type="button" data-role="engineering">Engineering</button><span class="sep">·</span><button type="button" data-role="mastering">Mastering</button><span class="sep">·</span><button type="button" data-role="scoring">Scoring</button>
+    </div>
+
+    <div class="songs" id="songs" aria-live="polite"></div>
+
+    <p id="empty" style="display:none; font-style: italic; color: #6b6450; margin-top: 1.5em;">Nothing here under that role &mdash; yet.</p>
+
+    <footer class="foot">
+      <p><em>Last updated 2026.</em></p>
+    </footer>
+  </div>
+
+  <script src="js/music-filter.js"></script>
+</body>
+</html>

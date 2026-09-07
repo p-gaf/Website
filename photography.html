@@ -14,7 +14,7 @@
 <body>
   <div class="wrap">
     <nav class="topnav">
-      <a href="/">Home</a><span class="sep">·</span><a href="/music">Music</a><span class="sep">·</span><a href="/photography" aria-current="page">Photography</a>
+      <a href="/">Home</a><span class="sep">·</span><a href="/discography">Discography</a><span class="sep">·</span><a href="/photography" aria-current="page">Photography</a>
     </nav>
 
     <h1>Photography</h1>
@@ -58,7 +58,7 @@
     var selectedEl = document.getElementById("selected");
     var groupsEl = document.getElementById("project-groups");
 
-    fetch("data/selected.json")
+    fetch("/data/selected.json")
       .then(function (r) { return r.json(); })
       .then(function (data) {
         selectedEl.innerHTML = data.map(function (p, i) {
@@ -88,7 +88,7 @@
       );
     }
 
-    fetch("data/projects.json")
+    fetch("/data/projects.json")
       .then(function (r) { return r.json(); })
       .then(function (data) {
         // Bucket by category

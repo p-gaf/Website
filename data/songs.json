@@ -8,10 +8,22 @@
     "note": "album cover",
     "note_link": "/projects/jane-dillon",
     "note_title": "See the Jane Dillon photographs",
+    "date": "2026-07-24",
     "year": 2026,
     "cover": "images/covers/sorry.jpg",
     "spotify": "https://open.spotify.com/track/39Tyc6PFl5IVqLW5FgmjyA",
     "apple_music": "https://music.apple.com/us/album/sorry/6793874991?i=6793874995"
+  },
+  {
+    "title": "Hing Wa Lee Jewelers",
+    "director": "Pranav Bhojwani",
+    "roles": [
+      "scoring"
+    ],
+    "date": "2025-11-13",
+    "year": 2025,
+    "cover": "images/covers/hing-wa-lee-jewelers.jpg",
+    "youtube": "https://www.youtube.com/watch?v=coPoW5kqsN8"
   },
   {
     "title": "Nobody Dances Anymore",
@@ -19,6 +31,7 @@
     "roles": [
       "engineering"
     ],
+    "date": "2025-10-31",
     "year": 2025,
     "cover": "images/covers/nobody-dances-anymore.jpg",
     "spotify": "https://open.spotify.com/track/0pv4JroUs3sBmaeQ0YeAqL",
@@ -32,36 +45,11 @@
       "mixing",
       "engineering"
     ],
+    "date": "2025-10-01",
     "year": 2025,
     "cover": "images/covers/demon-dressed-in-white.jpg",
     "spotify": "https://open.spotify.com/track/7BLJj2mq5hHNtEBITGL9vO",
     "apple_music": "https://music.apple.com/us/album/demon-dressed-in-white/1842823472?i=1842823473"
-  },
-  {
-    "title": "Please",
-    "artist": "Riley Russell",
-    "roles": [
-      "production",
-      "mixing",
-      "engineering"
-    ],
-    "year": 2025,
-    "cover": "images/covers/please.jpg",
-    "spotify": "https://open.spotify.com/track/0gRGhnQ6xik0hQwAzMCbqF",
-    "apple_music": "https://music.apple.com/us/album/please/1819844043?i=1819844044"
-  },
-  {
-    "title": "Forget Me",
-    "artist": "Riley Russell",
-    "roles": [
-      "production",
-      "mixing",
-      "engineering"
-    ],
-    "year": 2025,
-    "cover": "images/covers/forget-me.jpg",
-    "spotify": "https://open.spotify.com/track/3JGDPT4YA0LxfSnkxj672K",
-    "apple_music": "https://music.apple.com/us/album/forget-me/1816351353?i=1816351354"
   },
   {
     "title": "Foreseeable",
@@ -71,6 +59,7 @@
       "mixing",
       "engineering"
     ],
+    "date": "2025-08-01",
     "year": 2025,
     "cover": "images/covers/foreseeable.jpg",
     "spotify": "https://open.spotify.com/track/35vnMU5wW5aIgpXQCBjRgR",
@@ -84,6 +73,7 @@
       "mixing",
       "engineering"
     ],
+    "date": "2025-08-01",
     "year": 2025,
     "cover": "images/covers/forever.jpg",
     "spotify": "https://open.spotify.com/track/4xQNHOqI45ayGYZZcOaCVp",
@@ -97,6 +87,7 @@
       "mixing",
       "engineering"
     ],
+    "date": "2025-08-01",
     "year": 2025,
     "cover": "images/covers/varnish.jpg",
     "spotify": "https://open.spotify.com/track/1WLtBe0iXgDOmYYb01KZ6S",
@@ -110,10 +101,50 @@
       "mixing",
       "engineering"
     ],
+    "date": "2025-08-01",
     "year": 2025,
     "cover": "images/covers/counterfeit.jpg",
     "spotify": "https://open.spotify.com/track/1PR1g93pRCEwDFEXst3pEy",
     "apple_music": "https://music.apple.com/us/album/counterfeit/1824633154?i=1824633216"
+  },
+  {
+    "title": "Please",
+    "artist": "Riley Russell",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
+    "date": "2025-07-02",
+    "year": 2025,
+    "cover": "images/covers/please.jpg",
+    "spotify": "https://open.spotify.com/track/0gRGhnQ6xik0hQwAzMCbqF",
+    "apple_music": "https://music.apple.com/us/album/please/1819844043?i=1819844044"
+  },
+  {
+    "title": "Larchmont Jewelers",
+    "director": "Pranav Bhojwani",
+    "roles": [
+      "scoring"
+    ],
+    "date": "2025-06-18",
+    "year": 2025,
+    "cover": "images/covers/larchmont-jewelers.jpg",
+    "youtube": "https://www.youtube.com/watch?v=9YDbUSEgGng"
+  },
+  {
+    "title": "Forget Me",
+    "artist": "Riley Russell",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
+    "date": "2025-05-25",
+    "year": 2025,
+    "cover": "images/covers/forget-me.jpg",
+    "spotify": "https://open.spotify.com/track/3JGDPT4YA0LxfSnkxj672K",
+    "apple_music": "https://music.apple.com/us/album/forget-me/1816351353?i=1816351354"
   },
   {
     "title": "Pageantry",
@@ -123,10 +154,37 @@
       "mixing",
       "engineering"
     ],
+    "date": "2025-02-14",
     "year": 2025,
     "cover": "images/covers/forever.jpg",
     "spotify": "https://open.spotify.com/track/5j48pmDGSuGvjxIuYAxNAk",
     "apple_music": "https://music.apple.com/us/album/pageantry/1795657576?i=1795657578"
+  },
+  {
+    "title": "Haircut",
+    "artist": "Sasha Fox",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering",
+      "mastering"
+    ],
+    "date": "2024-11-29",
+    "year": 2024,
+    "cover": "images/covers/haircut.jpg",
+    "spotify": "https://open.spotify.com/track/6jGBuHsH7hjr7pVmQBe079",
+    "apple_music": "https://music.apple.com/us/album/haircut/1782071913?i=1782071914"
+  },
+  {
+    "title": "Night Shift Short Film",
+    "director": "Pranav Bhojwani",
+    "roles": [
+      "scoring"
+    ],
+    "date": "2024-11-22",
+    "year": 2024,
+    "cover": "images/covers/night-shift.jpg",
+    "youtube": "https://www.youtube.com/watch?v=AuajvywpoOc"
   },
   {
     "title": "Stingray",
@@ -136,6 +194,7 @@
       "mixing",
       "engineering"
     ],
+    "date": "2024-07-12",
     "year": 2024,
     "cover": "images/covers/forever.jpg",
     "spotify": "https://open.spotify.com/track/0Md9VdNTJusZLAYYyo6Thk",
@@ -149,24 +208,22 @@
       "mixing",
       "engineering"
     ],
+    "date": "2024-06-01",
     "year": 2024,
     "cover": "images/covers/forever.jpg",
     "spotify": "https://open.spotify.com/track/3GgFVvH55Y1Gr8OsALKV0F",
     "apple_music": "https://music.apple.com/us/album/tangled/1749768561?i=1749768562"
   },
   {
-    "title": "Haircut",
-    "artist": "Sasha Fox",
+    "title": "House Flipper Short Film",
+    "director": "Ravi Anumukonda",
     "roles": [
-      "production",
-      "mixing",
-      "engineering",
-      "mastering"
+      "scoring"
     ],
+    "date": "2024-05-30",
     "year": 2024,
-    "cover": "images/covers/haircut.jpg",
-    "spotify": "https://open.spotify.com/track/6jGBuHsH7hjr7pVmQBe079",
-    "apple_music": "https://music.apple.com/us/album/haircut/1782071913?i=1782071914"
+    "cover": "images/covers/house-flipper.jpg",
+    "vimeo": "https://vimeo.com/951900243/22bf2eba00"
   },
   {
     "title": "Vertigo",
@@ -177,6 +234,7 @@
       "engineering",
       "mastering"
     ],
+    "date": "2024-03-01",
     "year": 2024,
     "cover": "images/covers/vertigo.jpg",
     "spotify": "https://open.spotify.com/track/3PZmzVHttnpUBORQfScRw7",
@@ -189,6 +247,7 @@
       "mixing",
       "mastering"
     ],
+    "date": "2024-01-26",
     "year": 2024,
     "cover": "images/covers/tender-tally.jpg",
     "spotify": "https://open.spotify.com/track/1Z51imALFO33g6AAOEZ2FU",
@@ -202,6 +261,7 @@
       "mixing",
       "engineering"
     ],
+    "date": "2023-10-31",
     "year": 2023,
     "cover": "images/covers/bug-bite.jpg",
     "spotify": "https://open.spotify.com/track/2wC1cs4EibCxkTeNweItJS",
@@ -216,6 +276,7 @@
       "engineering",
       "mastering"
     ],
+    "date": "2023-09-29",
     "year": 2023,
     "cover": "images/covers/antics.jpg",
     "spotify": "https://open.spotify.com/track/4EpY3kA2pPoQNkiMU1WpBW",

@@ -16,6 +16,13 @@
     return roles.map(function (r) { return r.charAt(0).toUpperCase() + r.slice(1); }).join(", ");
   }
 
+  // Records credit an artist; scored films/commercials credit a director.
+  function byline(s) {
+    if (s.artist) return s.artist;
+    if (s.director) return "Dir. " + s.director;
+    return "";
+  }
+
   // Optional non-filterable aside, e.g. "(album cover)". When note_link is set
   // the text becomes a link to the related page, with a hover tooltip.
   function noteHtml(s) {
@@ -44,16 +51,22 @@
 
     songsEl.innerHTML = list.map(function (s) {
       var streams = [];
-      if (s.spotify) streams.push('<a href="' + escape(s.spotify) + '" target="_blank" rel="noopener noreferrer">Spotify</a>');
-      if (s.apple_music) streams.push('<a href="' + escape(s.apple_music) + '" target="_blank" rel="noopener noreferrer">Apple Music</a>');
+      function link(url, label) {
+        return '<a href="' + escape(url) + '" target="_blank" rel="noopener noreferrer">' + label + '</a>';
+      }
+      if (s.spotify) streams.push(link(s.spotify, "Spotify"));
+      if (s.apple_music) streams.push(link(s.apple_music, "Apple Music"));
+      if (s.youtube) streams.push(link(s.youtube, "YouTube"));
+      if (s.vimeo) streams.push(link(s.vimeo, "Vimeo"));
       var streamsHtml = streams.join('<span class="sep">·</span>');
 
       return (
         '<div class="song">' +
-          '<img class="cover" src="' + escape(s.cover) + '" alt="' + escape(s.title + " cover") + '" loading="lazy">' +
+          '<img class="cover' + (s.director ? ' wide' : '') + '" src="' + escape(s.cover) + '" alt="' +
+            escape(s.title + (s.director ? " thumbnail" : " cover")) + '" loading="lazy">' +
           '<div class="meta">' +
             '<span class="title">' + escape(s.title) + '</span> &mdash; ' +
-            '<span class="artist">' + escape(s.artist) + '</span><br>' +
+            '<span class="artist">' + escape(byline(s)) + '</span><br>' +
             '<span class="tags">' + escape(rolesLabel(s.roles)) + noteHtml(s) + '</span>' +
             '<span class="year"> &middot; ' + escape(String(s.year)) + '</span>' +
           '</div>' +
@@ -78,14 +91,15 @@
     setRole(b.getAttribute("data-role"));
   });
 
-  fetch("data/songs.json")
+  fetch("/data/songs.json")
     .then(function (r) {
       if (!r.ok) throw new Error("songs.json: " + r.status);
       return r.json();
     })
     .then(function (data) {
-      // newest first
-      data.sort(function (a, b) { return (b.year || 0) - (a.year || 0); });
+      // newest first, by full release date where we have one
+      function sortKey(s) { return s.date || ((s.year || 0) + "-01-01"); }
+      data.sort(function (a, b) { return sortKey(a) < sortKey(b) ? 1 : sortKey(a) > sortKey(b) ? -1 : 0; });
       state.songs = data;
       render();
     })

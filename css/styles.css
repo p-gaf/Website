@@ -144,19 +144,24 @@ hr {
 .songs { margin: 0; }
 .song {
   display: grid;
-  grid-template-columns: 60px 1fr auto;
+  grid-template-columns: 107px 1fr auto;
   grid-column-gap: 14px;
   align-items: center;
   padding: 12px 0;
   border-bottom: 1px dotted #dddddd;
 }
 .song:last-child { border-bottom: none; }
+/* Square album art by default; 16:9 video thumbnails (scoring credits) are
+   the same height but wider. Both are given explicit dimensions so the box is
+   reserved before the image loads — no pop-in, and the grey placeholder shows. */
 .song .cover {
   width: 60px;
   height: 60px;
   display: block;
+  object-fit: cover;
   background: #eeeeee;
 }
+.song .cover.wide { width: 107px; }
 .song .meta { line-height: 1.45; }
 .song .title { font-style: italic; }
 .song .artist { color: #444; }
@@ -271,13 +276,14 @@ hr {
   .gallery { column-count: 2; column-gap: 10px; }
   .gallery figure { margin-bottom: 10px; }
   .song {
-    grid-template-columns: 48px 1fr;
+    grid-template-columns: 85px 1fr;
     grid-row-gap: 6px;
   }
   .song .cover { width: 48px; height: 48px; }
+  .song .cover.wide { width: 85px; }
   .song .streams {
     grid-column: 1 / -1;
     text-align: left;
-    padding-left: 62px;
+    padding-left: 99px;
   }
 }
