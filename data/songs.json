@@ -52,6 +52,45 @@
     "apple_music": "https://music.apple.com/us/album/demon-dressed-in-white/1842823472?i=1842823473"
   },
   {
+    "title": "Please",
+    "artist": "Riley Russell",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
+    "date": "2025-07-02",
+    "year": 2025,
+    "cover": "images/covers/please.jpg",
+    "spotify": "https://open.spotify.com/track/0gRGhnQ6xik0hQwAzMCbqF",
+    "apple_music": "https://music.apple.com/us/album/please/1819844043?i=1819844044"
+  },
+  {
+    "title": "Larchmont Jewelers",
+    "director": "Pranav Bhojwani",
+    "roles": [
+      "scoring"
+    ],
+    "date": "2025-06-18",
+    "year": 2025,
+    "cover": "images/covers/larchmont-jewelers.jpg",
+    "youtube": "https://www.youtube.com/watch?v=9YDbUSEgGng"
+  },
+  {
+    "title": "Forget Me",
+    "artist": "Riley Russell",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering"
+    ],
+    "date": "2025-05-25",
+    "year": 2025,
+    "cover": "images/covers/forget-me.jpg",
+    "spotify": "https://open.spotify.com/track/3JGDPT4YA0LxfSnkxj672K",
+    "apple_music": "https://music.apple.com/us/album/forget-me/1816351353?i=1816351354"
+  },
+  {
     "title": "Foreseeable",
     "artist": "Sasha Fox",
     "roles": [
@@ -108,45 +147,6 @@
     "apple_music": "https://music.apple.com/us/album/counterfeit/1824633154?i=1824633216"
   },
   {
-    "title": "Please",
-    "artist": "Riley Russell",
-    "roles": [
-      "production",
-      "mixing",
-      "engineering"
-    ],
-    "date": "2025-07-02",
-    "year": 2025,
-    "cover": "images/covers/please.jpg",
-    "spotify": "https://open.spotify.com/track/0gRGhnQ6xik0hQwAzMCbqF",
-    "apple_music": "https://music.apple.com/us/album/please/1819844043?i=1819844044"
-  },
-  {
-    "title": "Larchmont Jewelers",
-    "director": "Pranav Bhojwani",
-    "roles": [
-      "scoring"
-    ],
-    "date": "2025-06-18",
-    "year": 2025,
-    "cover": "images/covers/larchmont-jewelers.jpg",
-    "youtube": "https://www.youtube.com/watch?v=9YDbUSEgGng"
-  },
-  {
-    "title": "Forget Me",
-    "artist": "Riley Russell",
-    "roles": [
-      "production",
-      "mixing",
-      "engineering"
-    ],
-    "date": "2025-05-25",
-    "year": 2025,
-    "cover": "images/covers/forget-me.jpg",
-    "spotify": "https://open.spotify.com/track/3JGDPT4YA0LxfSnkxj672K",
-    "apple_music": "https://music.apple.com/us/album/forget-me/1816351353?i=1816351354"
-  },
-  {
     "title": "Pageantry",
     "artist": "Sasha Fox",
     "roles": [
@@ -159,21 +159,6 @@
     "cover": "images/covers/forever.jpg",
     "spotify": "https://open.spotify.com/track/5j48pmDGSuGvjxIuYAxNAk",
     "apple_music": "https://music.apple.com/us/album/pageantry/1795657576?i=1795657578"
-  },
-  {
-    "title": "Haircut",
-    "artist": "Sasha Fox",
-    "roles": [
-      "production",
-      "mixing",
-      "engineering",
-      "mastering"
-    ],
-    "date": "2024-11-29",
-    "year": 2024,
-    "cover": "images/covers/haircut.jpg",
-    "spotify": "https://open.spotify.com/track/6jGBuHsH7hjr7pVmQBe079",
-    "apple_music": "https://music.apple.com/us/album/haircut/1782071913?i=1782071914"
   },
   {
     "title": "Night Shift Short Film",
@@ -213,6 +198,21 @@
     "cover": "images/covers/forever.jpg",
     "spotify": "https://open.spotify.com/track/3GgFVvH55Y1Gr8OsALKV0F",
     "apple_music": "https://music.apple.com/us/album/tangled/1749768561?i=1749768562"
+  },
+  {
+    "title": "Haircut",
+    "artist": "Sasha Fox",
+    "roles": [
+      "production",
+      "mixing",
+      "engineering",
+      "mastering"
+    ],
+    "date": "2024-11-29",
+    "year": 2024,
+    "cover": "images/covers/haircut.jpg",
+    "spotify": "https://open.spotify.com/track/6jGBuHsH7hjr7pVmQBe079",
+    "apple_music": "https://music.apple.com/us/album/haircut/1782071913?i=1782071914"
   },
   {
     "title": "House Flipper Short Film",

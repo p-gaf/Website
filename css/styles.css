@@ -162,6 +162,10 @@ hr {
   background: #eeeeee;
 }
 .song .cover.wide { width: 107px; }
+/* Square art and 16:9 thumbnails share a centre axis, so the narrower album
+   covers aren't left with all their slack on one side. */
+.song .cover, .song .cover-link { justify-self: center; }
+.song .cover-link { display: block; line-height: 0; text-decoration: none; }
 .song .meta { line-height: 1.45; }
 .song .title { font-style: italic; }
 .song .artist { color: #444; }

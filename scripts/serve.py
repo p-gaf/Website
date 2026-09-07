@@ -23,6 +23,12 @@ class HtmlFallbackHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
+    def end_headers(self):
+        # Never cache in local dev — otherwise edits to css/js/json appear not
+        # to take effect and you end up debugging a stale page.
+        self.send_header("Cache-Control", "no-store, must-revalidate")
+        super().end_headers()
+
     def do_GET(self):
         path = self.path.split("?", 1)[0].split("#", 1)[0]
         fs_path = Path(self.translate_path(path))

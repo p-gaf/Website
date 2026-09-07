@@ -23,6 +23,22 @@
     return "";
   }
 
+  // Cover art, or a 16:9 video thumbnail for scoring credits. Scored work has a
+  // single destination, so the thumbnail itself links to the video; records have
+  // two streaming links, so their cover stays a plain image.
+  function coverHtml(s) {
+    var video = s.youtube || s.vimeo;
+    var img = '<img class="cover' + (s.director ? ' wide' : '') + '"' +
+              ' src="' + escape(s.cover) + '"' +
+              ' alt="' + escape(s.title + (s.director ? " thumbnail" : " cover")) + '"' +
+              ' loading="lazy">';
+    if (!video) return img;
+    var where = s.youtube ? "YouTube" : "Vimeo";
+    return '<a class="cover-link" href="' + escape(video) + '" target="_blank"' +
+           ' rel="noopener noreferrer" title="' + escape("Watch " + s.title + " on " + where) + '">' +
+           img + '</a>';
+  }
+
   // Optional non-filterable aside, e.g. "(album cover)". When note_link is set
   // the text becomes a link to the related page, with a hover tooltip.
   function noteHtml(s) {
@@ -62,8 +78,7 @@
 
       return (
         '<div class="song">' +
-          '<img class="cover' + (s.director ? ' wide' : '') + '" src="' + escape(s.cover) + '" alt="' +
-            escape(s.title + (s.director ? " thumbnail" : " cover")) + '" loading="lazy">' +
+          coverHtml(s) +
           '<div class="meta">' +
             '<span class="title">' + escape(s.title) + '</span> &mdash; ' +
             '<span class="artist">' + escape(byline(s)) + '</span><br>' +
@@ -97,9 +112,9 @@
       return r.json();
     })
     .then(function (data) {
-      // newest first, by full release date where we have one
-      function sortKey(s) { return s.date || ((s.year || 0) + "-01-01"); }
-      data.sort(function (a, b) { return sortKey(a) < sortKey(b) ? 1 : sortKey(a) > sortKey(b) ? -1 : 0; });
+      // Display order == file order. Deliberate: release dates don't always
+      // match how the work groups (same-day EP tracks, production order), so
+      // the order is curated by hand in data/songs.json rather than sorted.
       state.songs = data;
       render();
     })
